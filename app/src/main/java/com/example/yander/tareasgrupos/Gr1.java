@@ -17,7 +17,7 @@ public class Gr1 extends AppCompatActivity {
     private RatingBar ratingBar;
     private TextView txtRatingValue;
     private Button btnSubmit;
-    private String message;
+    private String texto;
     private EditText editText2;
 
     @Override
@@ -48,21 +48,21 @@ public class Gr1 extends AppCompatActivity {
     }
 
     public void addListenerOnButton() {
-
         ratingBar = (RatingBar) findViewById(R.id.ratingBar);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
-        editText2 = (EditText) findViewById(R.id.comentarios);
-         message= "Comentario:" + editText2.getText().toString() +"/n"+ String.valueOf(ratingBar.getRating());
+        editText2   = ((EditText)findViewById(R.id.comentarios));
+        texto= editText2.getText().toString();
 
         //if click on me, then display the current rating value.
         btnSubmit.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(Gr1.this,
-                        message,
+                texto = "\n Comentario enviado: " + editText2.getText().toString() +"\n Calificacion: " +String.valueOf(ratingBar.getRating());
+                Toast.makeText(Gr1.this,texto
+                        ,
                         Toast.LENGTH_SHORT).show();
+
 
             }
 
