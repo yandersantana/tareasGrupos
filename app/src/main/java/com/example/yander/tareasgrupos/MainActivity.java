@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
-    Button b1,b2,b3,b4;
+    Button b1,b2,b3,b4,b5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +19,12 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         b2=(Button)findViewById(R.id.grupo2);
         b3=(Button)findViewById(R.id.grupo3);
         b4=(Button)findViewById(R.id.grupo4);
+        b5=(Button)findViewById(R.id.grupo5);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
         b4.setOnClickListener(this);
+        b5.setOnClickListener(this);
     }
 
         //implement the onClick method here
@@ -34,16 +36,20 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                     startActivityForResult(intent, 0);
                     break;
                 case R.id.grupo2:
-                    Intent intent2 = new Intent (v.getContext(), Gr2.class);
+                    Intent intent2 = new Intent (v.getContext(), TemasGrupo2.class);
                     startActivityForResult(intent2, 0);
                     break;
                 case R.id.grupo3:
-                    Intent intent3 = new Intent (v.getContext(), Gr3.class);
+                    Intent intent3 = new Intent (v.getContext(), TemasGrupo3.class);
                     startActivityForResult(intent3, 0);
                     break;
                 case R.id.grupo4:
-                    Intent intent4 = new Intent (v.getContext(), Gr4.class);
+                    Intent intent4 = new Intent (v.getContext(), temasGrupo4.class);
                     startActivityForResult(intent4, 0);
+                    break;
+                case R.id.grupo5:
+                    Intent intent5 = new Intent (v.getContext(), temasGrupo5.class);
+                    startActivityForResult(intent5, 0);
                     break;
             }
         }

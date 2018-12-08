@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/movie"
+        android:title="Movie"
+        android:orderInCategory="100"
+        android:icon="@drawable/toolbar_movies"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/music"
+        android:title="Music"
+        android:orderInCategory="100"
+        android:icon="@drawable/toolbar_music"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/profile"
+        android:title="Perfil"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/messages"
+        android:title="Mensajes"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/archive"
+        android:title="Archivos"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/Exit"
+        android:title="Salir"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+</menu>

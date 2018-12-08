@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gr3">
-
-
+    tools:context=".TEM2">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -17,5 +15,6 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="56dp" />
+        tools:layout_editor_absoluteY="0dp" />
+
 </RelativeLayout>

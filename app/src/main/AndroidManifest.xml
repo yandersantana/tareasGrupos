@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yander.tareasgrupos">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,25 +24,39 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
+
         <activity android:name=".Gr2" />
         android:parentActivityName=".MainActivity" >
         <!-- The meta-data tag is required if you support API level 15 and lower -->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
+
         <activity android:name=".Gr3" />
         android:parentActivityName=".MainActivity" >
         <!-- The meta-data tag is required if you support API level 15 and lower -->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
-        <activity android:name=".Gr4"></activity>
+
+        <activity android:name=".Gr4" />
         android:parentActivityName=".MainActivity" >
         <!-- The meta-data tag is required if you support API level 15 and lower -->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
+        <activity android:name=".webView" />
+        <activity android:name=".PSpinner" />
+        <activity android:name=".TemasGrupo2" />
+        <activity android:name=".Gr5" />
+        <activity android:name=".LinearLayout" />
+        <activity android:name=".GrLayout" />
+        <activity android:name=".temasGrupo5" />
+        <activity android:name=".ProgressB" />
+        <activity android:name=".temasGrupo4" />
+        <activity android:name=".TEM2" />
+        <activity android:name=".TemasGrupo3"></activity>
     </application>
 
 </manifest>

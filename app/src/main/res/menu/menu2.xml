@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/profile"
+        android:title="Elemento1"
+        android:orderInCategory="100"
+        android:icon="@drawable/toolbar_movies"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/messages"
+        android:title="Elemento2"
+        android:icon="@drawable/toolbar_music"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/archive"
+        android:title="Elemento3"
+        android:orderInCategory="100"
+        android:icon="@drawable/toolbar_movies"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/Exit"
+        android:title="Elemento4"
+        android:orderInCategory="100"
+        android:icon="@drawable/toolbar_music"
+        app:showAsAction="never"
+        />
+</menu>
